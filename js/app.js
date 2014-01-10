@@ -23,7 +23,7 @@ var todomvc = angular.module('todomvc', ['ngRoute'])
 
 var sync_object = {
 	"GDrive": {
-		"key": "246601517267-f91b21uqgm98rfh4vpb3jq39jdvr8evv.apps.googleusercontent.com",
+		"key": "988787464942-rg9g7tftmhj7f01ktb79ueqrg3uuiv7p.apps.googleusercontent.com",
 		"scope": "https://www.googleapis.com/auth/drive",
 		"app_name": "nimbus-todo-demo"
 	},
