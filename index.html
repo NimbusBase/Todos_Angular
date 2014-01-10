@@ -1,79 +1,164 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en" data-framework="angularjs">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>AngularJS • TodoMVC</title>
+		<link rel="stylesheet" href="bower_components/todomvc-common/base.css">
+		<style>[ng-cloak] { display: none; }</style>
+		<style type="text/css">
+			#name {
+				text-align: center;
+				color: #fff;
+				font-size: 3.5em;
+			}
+			#powered {
+				margin: 0px auto;
+				display: block;
+				width: 250px;
+				margin-top: 5px;
+			}
+			.s_icon {
+				height: 18px;
+				margin-right: 7px;
+				display: inline;
+			}
+			.content, .bar-title {
+				transition: all 0.10s ease-in-out;
+				-webkit-transition: all 0.10s ease-in-out;
+				border-left: 1px solid #0f1114;
+			}
+			.button-block{
+				display: block;
+				padding: 11px 0 13px;
+				margin-bottom: 10px;
+				font-size: 16px;
+				position: relative;
+				padding: 4px 5px;
+				margin: 0;
+				font-weight: bold;
+				line-height: 18px;
+				color: #333;
+				text-align: center;
+				text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+				vertical-align: top;
+				cursor: pointer;
+				background-color: #f8f8f8;
+				background-image: -webkit-linear-gradient(top, #f8f8f8 0, #d4d4d4 100%);
+				background-image: linear-gradient(to bottom, #f8f8f8 0, #d4d4d4 100%);
+				border: 1px solid rgba(0, 0, 0, .3);
+				border-radius: 3px;
+				box-shadow: inset 0 1px 1px rgba(255, 255, 255, .4), 0 1px 2px rgba(0, 0, 0, .05);
+				padding-bottom: 12px;
+			}
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Todos angular : " />
+			.cover{
+				background: url(back.png) no-repeat center center fixed;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				position: fixed;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				text-align: center;
+				z-index: 99999;
+			}
+		</style>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Todos angular</title>
-  </head>
 
-  <body>
+	</head>
+	<body ng-app="todomvc">
+		<ng-view />
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/NimbusBase/Todos_Angular">View on GitHub</a>
+		<script type="text/ng-template" id="todomvc-index.html">
 
-          <h1 id="project_title">Todos angular</h1>
-          <h2 id="project_tagline"></h2>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/NimbusBase/Todos_Angular/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/NimbusBase/Todos_Angular/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+		<!-- login -->
+		<div class="cover">
+			<div class="content">
+				<div style="position: absolute; top: 50px; width: 94%; padding: 3%;">
+					<h1 id="name">todos</h1>
+					<img id="powered" src="nimbusbase_2_powered_by.png">
+					<p style="width: 350px; margin: auto; color: #eee; font-size: 20px; line-height: 1.2; margin-top: 15px; margin-bottom: 15px;">This todo list is a implementation of todoMVC with NimbusBase on the Angular.js framework. <a href="http://nimbusbase.github.io/angularjs-nimbusbase-todos" target="_blank" style="color: navajowhite;">View The Code</a></p>
+				</div>
+				<div style="position: absolute; bottom: 0px; width: 94%; padding: 3%;">
+					<a class="button-block" style="margin:5px; padding-top: 14px; margin-bottom: 10px;" onclick="Nimbus.Auth.authorize('Dropbox')"><img class="s_icon" src="dropbox_icon.png">Login with Dropbox</a>
+					<a class="button-block" style="margin:5px; padding-top: 14px;" onclick="Nimbus.Auth.authorize('GDrive')"><img class="s_icon" src="google_drive_icon.png">Login with Google Drive</a>
+				</div>
+			</div>
+		</div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+			<section id="todoapp" ng-controller="TodoCtrl">
+				<header id="header">
+					<h1>todos</h1>
+				<a class="button-block" href="#" ng-click="logout()">Logout</a>
+					<form id="todo-form" ng-submit="addTodo()">
+						<input id="new-todo" placeholder="What needs to be done?" ng-model="newTodo" autofocus>
+					</form>
+				</header>
+				<section id="main" ng-show="todos.length" ng-cloak>
+					<input id="toggle-all" type="checkbox" ng-model="allChecked" ng-click="markAll(allChecked)">
+					<label for="toggle-all">Mark all as complete</label>
+					<ul id="todo-list">
+						<li ng-repeat="todo in todos | filter:statusFilter track by $index" ng-class="{completed: todo.completed, editing: todo == editedTodo}">
+							<div class="view">
+								<input class="toggle" type="checkbox" ng-model="todo.completed">
+								<label ng-dblclick="editTodo(todo)">{{todo.title}}</label>
+								<button class="destroy" ng-click="removeTodo(todo)"></button>
+							</div>
+							<form ng-submit="doneEditing(todo)">
+								<input class="edit" ng-trim="false" ng-model="todo.title" todo-escape="revertEditing(todo)" ng-blur="doneEditing(todo)" todo-focus="todo == editedTodo">
+							</form>
+						</li>
+					</ul>
+				</section>
+				<footer id="footer" ng-show="todos.length" ng-cloak>
+					<span id="todo-count"><strong>{{remainingCount}}</strong>
+						<ng-pluralize count="remainingCount" when="{ one: 'item left', other: 'items left' }"></ng-pluralize>
+					</span>
+					<ul id="filters">
+						<li>
+							<a ng-class="{selected: status == ''} " href="#/">All</a>
+						</li>
+						<li>
+							<a ng-class="{selected: status == 'active'}" href="#/active">Active</a>
+						</li>
+						<li>
+							<a ng-class="{selected: status == 'completed'}" href="#/completed">Completed</a>
+						</li>
+					</ul>
+					<button id="clear-completed" ng-click="clearCompletedTodos()" ng-show="completedCount">Clear completed ({{completedCount}})</button>
+				</footer>
+			</section>
+			<footer id="info">
+				<p>Double-click to edit a todo</p>
+				<p>Credits:
+					<a href="http://twitter.com/cburgdorf">Christoph Burgdorf</a>,
+					<a href="http://ericbidelman.com">Eric Bidelman</a>,
+					<a href="http://jacobmumm.com">Jacob Mumm</a> and
+					<a href="http://igorminar.com">Igor Minar</a>
+				</p>
+				<p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+			</footer>
+		</script>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+		<script src="bower_components/todomvc-common/base.js"></script>
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/angular-route/angular-route.js"></script>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Todos angular maintained by <a href="https://github.com/NimbusBase">NimbusBase</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://nimbusbase.com/static/nimbus.min.js"></script>
+		
+		
+		<script src="js/app.js"></script>
+		<script src="js/controllers/todoCtrl.js"></script>
+		<script src="js/services/todoStorage.js"></script>
+		<script src="js/directives/todoFocus.js"></script>
+		<script src="js/directives/todoEscape.js"></script>
+	</body>
 </html>
