@@ -28,8 +28,8 @@ var sync_object = {
 		"app_name": "nimbus-todo-demo"
 	},
 	"Dropbox": {
-		"key": "q5yx30gr8mcvq4f",
-		"secret": "qy64qphr70lwui5",
+		"key": "qzoixw7xmcn95kd",
+		"secret": "vfme6di5iwslpep",
 		"app_name": "todomvc_app"
 	},
     "synchronous": true
