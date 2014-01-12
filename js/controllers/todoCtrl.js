@@ -7,8 +7,7 @@
  * - exposes the model to the template and provides event handlers
  */
 todomvc.controller('TodoCtrl', function TodoCtrl($scope, $routeParams, todoStorage, filterFilter) {
-	var todos = $scope.todos = todoStorage.get();
-
+	var todos = $scope.todos = [];
 	$scope.newTodo = '';
 	$scope.editedTodo = null;
 
@@ -23,9 +22,11 @@ todomvc.controller('TodoCtrl', function TodoCtrl($scope, $routeParams, todoStora
 			
 			$scope.Todos.sync_all(function(){
 				var data = $scope.Todos.all();
+
 				for (var i = 0; i < data.length; i++) {
 					todos.push(data[i]);
 				};
+
 				window.TO = $scope.Todos;
 				$scope.$apply();
 			});
@@ -61,6 +62,16 @@ todomvc.controller('TodoCtrl', function TodoCtrl($scope, $routeParams, todoStora
 		$scope.newTodo = '';
 	};
 
+	$scope.changeComplete = function (todo){
+		var ob = $scope.Todos.find(todo.id); 
+		if(ob.completed === true){
+			ob.completed = false;
+		}else{
+			ob.completed = true;
+		} 
+		ob.save();  
+	}
+	
 	$scope.editTodo = function (todo) {
 		$scope.editedTodo = todo;
 		// Clone the original todo to restore it on demand.
