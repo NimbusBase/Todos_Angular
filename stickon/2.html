@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Kendo UI Web</title>
+
+        <!-- Kendo UI Mobile CSS -->
+        <link href="styles/kendo.mobile.all.min.css" rel="stylesheet" />
+        <!-- jQuery JavaScript -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Kendo UI Mobile combined JavaScript -->
+        <script src="js/kendo.mobile.min.js"></script>
+
+    </head>
+    <body> 
+ <div data-role="splitview" data-show="onShow">
+  <div data-role="pane">
+      <div data-role="view" id="foo">Pane 1 </div>
+  </div>
+  <div data-role="pane">
+      <div data-role="view" id="foo">Pane 2 </div>
+  </div>
+ </div>
+
+<script>
+function onShow(e) {
+  console.log(e);
+}
+var app = new kendo.mobile.Application($(document.body),{ skin: "ios7" });
+</script>
+    </body>
+ 
+</html>

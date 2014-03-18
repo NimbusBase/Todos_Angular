@@ -1,0 +1,829 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"call",
+				"callReady"
+			],
+			[
+				"read",
+				"readyState"
+			],
+			[
+				"from",
+				"fromCloud"
+			],
+			[
+				"own",
+				"owner"
+			],
+			[
+				"cur",
+				"current_syncing"
+			],
+			[
+				"app",
+				"app_info"
+			],
+			[
+				"user",
+				"user_model"
+			],
+			[
+				"new",
+				"newPlist"
+			],
+			[
+				"proje",
+				"project"
+			],
+			[
+				"goog",
+				"google_login"
+			],
+			[
+				"v",
+				"vendor"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"ser",
+				"server_url"
+			],
+			[
+				"ro",
+				"role_session_name"
+			],
+			[
+				"role",
+				"role_session_name"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"delete",
+				"deleteWriter"
+			],
+			[
+				"delet",
+				"deleteReader"
+			],
+			[
+				"create",
+				"createReaderRole"
+			],
+			[
+				"writer_",
+				"writer_role"
+			],
+			[
+				"reader",
+				"reader_role"
+			],
+			[
+				"std",
+				"stdout"
+			],
+			[
+				"sy",
+				"sync_services"
+			],
+			[
+				"snyc",
+				"sync_services"
+			],
+			[
+				"se",
+				"send_event_tracking"
+			],
+			[
+				"c",
+				"cloud"
+			],
+			[
+				"pa",
+				"page_url"
+			],
+			[
+				"cloud",
+				"cloudType"
+			],
+			[
+				"para",
+				"paraValue"
+			],
+			[
+				"par",
+				"paraName"
+			],
+			[
+				"pare",
+				"parent_type"
+			],
+			[
+				"lo",
+				"LocalSync"
+			],
+			[
+				"string",
+				"stringify"
+			],
+			[
+				"rev",
+				"recover_call"
+			],
+			[
+				"ob",
+				"object"
+			],
+			[
+				"add",
+				"add_from_cloud"
+			],
+			[
+				"obj",
+				"object"
+			],
+			[
+				"em",
+				"email_callback"
+			],
+			[
+				"get",
+				"get_all_tables"
+			],
+			[
+				"sync",
+				"sync_model_base_algo"
+			],
+			[
+				"st",
+				"stringify"
+			],
+			[
+				"load",
+				"load_all_from_cloud"
+			],
+			[
+				"upda",
+				"update_to_cloud"
+			],
+			[
+				"up",
+				"update_to_cloud"
+			],
+			[
+				"dele",
+				"delete_from_cloud"
+			],
+			[
+				"err",
+				"error"
+			],
+			[
+				"auth",
+				"auth_by"
+			],
+			[
+				"in",
+				"initialization"
+			],
+			[
+				"a",
+				"access_token"
+			],
+			[
+				"rol",
+				"role_arn"
+			],
+			[
+				"Roe",
+				"RoleSessionName"
+			],
+			[
+				"Ro",
+				"RoleArn"
+			],
+			[
+				"au",
+				"auth_by"
+			],
+			[
+				"id",
+				"id_token"
+			],
+			[
+				"acc",
+				"access_token"
+			],
+			[
+				"We",
+				"WebIdentityToken"
+			],
+			[
+				"re",
+				"response"
+			],
+			[
+				"aja",
+				"ajaxData"
+			],
+			[
+				"aj",
+				"ajaxData"
+			],
+			[
+				"len",
+				"length-1"
+			],
+			[
+				"str",
+				"stringify"
+			],
+			[
+				"local",
+				"localstorage"
+			],
+			[
+				"JS",
+				"JS_OUTPUT"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"dow",
+				"DownVote"
+			],
+			[
+				"u",
+				"user_email"
+			],
+			[
+				"do",
+				"downVoteCount"
+			],
+			[
+				"upV",
+				"upVoteCount"
+			],
+			[
+				"po",
+				"postid"
+			],
+			[
+				"log",
+				"Logout"
+			],
+			[
+				"ca",
+				"canDelete"
+			],
+			[
+				"loca",
+				"localStorage"
+			],
+			[
+				"post",
+				"post_data"
+			],
+			[
+				"pst",
+				"post_data"
+			],
+			[
+				"syc",
+				"syncInfo"
+			],
+			[
+				"inpu",
+				"input_val"
+			],
+			[
+				"result",
+				"result2"
+			],
+			[
+				"reuslt",
+				"result1"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "enterprise/app/app.coffee",
+			"settings":
+			{
+				"buffer_size": 2562,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "testpage/enterprise_dynamodb/plugins/values/index.html",
+			"settings":
+			{
+				"buffer_size": 16,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/waiterZen/Desktop/enterprise/app/app.js",
+		"/Users/waiterZen/Desktop/enterprise/app/core.coffee",
+		"/Users/waiterZen/Desktop/enterprise/app/app.coffee",
+		"/Users/waiterZen/Desktop/enterprise/plugins/user/index.coffee",
+		"/Users/waiterZen/Desktop/enterprise/plugins/user2/index.coffee",
+		"/Users/waiterZen/Desktop/enterprise/app/core.js",
+		"/Users/waiterZen/Desktop/enterprise/plugins/workspace2/index.coffee",
+		"/Users/waiterZen/Desktop/enterprise/index.html",
+		"/Users/waiterZen/Desktop/enterprise/vendor/nimbus_dynamodb.js",
+		"/Users/waiterZen/Desktop/testpage/enterprise_dynamodb/app/app.coffee",
+		"/Users/waiterZen/Desktop/testpage/enterprise_dynamodb/app/core.coffee",
+		"/Users/waiterZen/Desktop/enterprise/logo.png",
+		"/Users/waiterZen/Desktop/testpage/enterprise_dynamodb/vendor/all.js",
+		"/Users/waiterZen/Desktop/testpage/enterprise_dynamodb/vendor/nimbus_dynamodb.js",
+		"/Users/waiterZen/Desktop/enterprise/vendor/all.js",
+		"/Users/waiterZen/Desktop/enterprise/assets/css/styles.css",
+		"/Users/waiterZen/Desktop/testpage/enterprise_dynamodb/index.html",
+		"/Users/waiterZen/Desktop/testpage/enterprise_dynamodb/plugins/user/index.coffee",
+		"/Users/waiterZen/Desktop/testpage/enterprise_dynamodb/plugins/user/index.html",
+		"/Users/waiterZen/Desktop/enterprise/plugins/document/index.coffee",
+		"/Users/waiterZen/Desktop/testpage/enterprise_dynamodb/plugins/document/index.coffee",
+		"/Users/waiterZen/Desktop/enterprise/plugins/document/index.html",
+		"/Users/waiterZen/Desktop/testpage/enterprise_dynamodb/plugins/document/index.html",
+		"/Users/waiterZen/Desktop/testpage/enterprise_dynamodb/assets/css/styles.css",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/binary/index.html",
+		"/Users/waiterZen/Desktop/testpage/enterprise_dynamodb/plugins/user/index.js",
+		"/Users/waiterZen/Desktop/NimbusBase/Client/Nimbus.Client.Dynamodb.coffee",
+		"/Users/waiterZen/Desktop/testpage/enterprise_dynamodb/plugins/todo/index.coffee",
+		"/Users/waiterZen/Desktop/NimbusBase/app/nimbusbase.coffee",
+		"/Users/waiterZen/Desktop/NimbusBase/adaptors/Nimbus.Model.DynamoDB.coffee",
+		"/Users/waiterZen/Desktop/NimbusBase/app/Nimbus.model.general_sync.coffee",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/aws/all.js",
+		"/Users/waiterZen/Desktop/NimbusBase/adaptors/Nimbus.Model.Dropbox.js",
+		"/Users/waiterZen/Desktop/NimbusBase/new_build.sh",
+		"/Users/waiterZen/Desktop/NimbusBase/analytics/tracking.analytics.coffee",
+		"/Users/waiterZen/Desktop/NimbusBase/app/Nimbus.model.localsync.js",
+		"/Users/waiterZen/Desktop/testpage/enterprise_dynamodb/plugins/todo/index.html",
+		"/Users/waiterZen/Desktop/testpage/enterprise_dynamodb/plugins/workspace/index.coffee",
+		"/Users/waiterZen/Desktop/NimbusBase/app/async_counter.coffee",
+		"/Users/waiterZen/Desktop/NimbusBase/adaptors/Nimbus.Model.Dropbox.coffee",
+		"/Users/waiterZen/Desktop/testpage/enterprise_dynamodb/plugins/todo/index.js",
+		"/Users/waiterZen/Desktop/NimbusBase/all.js",
+		"/Users/waiterZen/Desktop/NimbusBase/Client/Nimbus.Client.Dynamodb.js",
+		"/Users/waiterZen/Desktop/NimbusBase/adaptors/Nimbus.Model.GDrive.coffee",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/aws/nodejs_server/routes/role.coffee",
+		"/Users/waiterZen/Desktop/testpage/enterprise_dynamodb/img/check.png",
+		"/Users/waiterZen/Desktop/testpage/enterprise_dynamodb/plugins/workspace/index.html",
+		"/Users/waiterZen/Desktop/testpage/enterprise_dynamodb/plugins/values/index.coffee",
+		"/Users/waiterZen/Desktop/testpage/enterprise_dynamodb/logo.png",
+		"/Users/waiterZen/Desktop/testpage/enterprise_dynamodb/plugins/workspace/index.js",
+		"/Users/waiterZen/Desktop/testpage/enterprise_dynamodb/app/core.js",
+		"/Users/waiterZen/Desktop/testpage/enterprise_dynamodb/app/app.js",
+		"/Users/waiterZen/Desktop/NimbusBase/.project",
+		"/Users/waiterZen/Desktop/stickon/login.html",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/aws/nodejs_server/routes/test project:",
+		"/Users/waiterZen/Desktop/stickon/index.html",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/aws/index.html",
+		"/Users/waiterZen/Desktop/NimbusBase/doc/Google design",
+		"/Users/waiterZen/Desktop/tweetdiary/index.html",
+		"/Users/waiterZen/Desktop/tweetdiary/multi.js",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/binary/in  aws  branch:",
+		"/Users/waiterZen/Desktop/NimbusBase/analytics/base64.coffee",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/aws/nodejs_server/app.js",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/binary/qunit_dropbox.coffee",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/binary/qunit_gdrive.coffee",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/binary/qunit_local.js",
+		"/Users/waiterZen/Desktop/NimbusBase/Client/Nimbus.Binary.Dropbox.coffee",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/binary/qunit_local.coffee",
+		"/Users/waiterZen/Desktop/NimbusBase/Client/Nimbus.Client.Dropbox.coffee",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/binary/test_multi.coffee",
+		"/Users/waiterZen/Desktop/tweetdiary/multi.coffee",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/aws/nodejs_server/api.js",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/aws/nodejs_server/routes/role.js",
+		"/Users/waiterZen/Desktop/NimbusBase/Client/Nimbus.Client.GDrive.coffee",
+		"/Users/waiterZen/Desktop/NimbusBase/dropboxjs/xhr.coffee",
+		"/Users/waiterZen/Desktop/stickon/2.html",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/aws/nodejs_server/api.coffee",
+		"/Users/waiterZen/Desktop/NimbusBase/index.html",
+		"/Users/waiterZen/Desktop/NimbusBase/adaptors/Nimbus.Auth.Dynamodb.coffee",
+		"/Users/waiterZen/Desktop/tweetdiary/all.js",
+		"/Users/waiterZen/Desktop/tweetdiary/app.js",
+		"/Users/waiterZen/Desktop/tweetdiary/app.coffee",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/localTest/test_multi.js",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/aws/nodejs_server/role.coffee",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/aws/nodejs_server/api.sh",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/aws/nodejs_server/package 2.json",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/aws/nodejs_server/nimbus/app.js",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/aws/nodejs_server/nimbus/routes/role.js",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/aws/nodejs_server/create_roles.coffee",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/aws/nodejs_server/run.sh",
+		"/Users/waiterZen/Desktop/aws-nodejs-sample/policy.txt",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/aws/nodejs_server/dynamodb.coffee",
+		"/Users/waiterZen/Desktop/aws-nodejs-sample/dynamodb.coffee",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/aws/nodejs_server/policy.txt",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/aws/nodejs_server/package.json",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/aws/nodejs_server/nimbus/routes/user.js",
+		"/Users/waiterZen/Desktop/aws-nodejs-sample/dynamodb.js",
+		"/Users/waiterZen/Desktop/aws-nodejs-sample/run.sh",
+		"/Users/waiterZen/Desktop/aws-nodejs-sample/sample副本.js",
+		"/Users/waiterZen/Desktop/aws-sdk-js/cmd",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/qunit-1.10.0.css",
+		"/Users/waiterZen/Desktop/n/a.js",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/binary/test_multi.js",
+		"/Users/waiterZen/Desktop/n/2.txt",
+		"/Users/waiterZen/Desktop/n/1.txt",
+		"/Users/waiterZen/Desktop/RR/js/scripts/doc_controller.coffee",
+		"/Users/waiterZen/Desktop/RR/js/all.js",
+		"/Users/waiterZen/Desktop/NimbusBase/Client/Nimbus.Binary.GDrive.coffee",
+		"/Users/waiterZen/Desktop/RR/templates/doc.html",
+		"/Users/waiterZen/Desktop/RR/index.html",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/testing2.coffee",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/test_gdrive.coffee",
+		"/Users/waiterZen/Desktop/NimbusBase/testing/localTest/1.html",
+		"/Users/waiterZen/Desktop/boothy/public/js/boothy.coffee",
+		"/Users/waiterZen/Desktop/boothy/index.html",
+		"/Users/waiterZen/Desktop/boothy/public/js/nimbus.js",
+		"/Users/waiterZen/Desktop/NimbusBase/nimbus.js",
+		"/Users/waiterZen/Desktop/boothy/public/js/boothy.js",
+		"/Users/waiterZen/Desktop/NimbusBase/Client/Nimbus.Client.GDrive.js",
+		"/Users/waiterZen/Desktop/NimbusBase/index.js",
+		"/Users/waiterZen/Desktop/NimbusBaseSite/learn_android.html",
+		"/Users/waiterZen/Desktop/NimbusBaseSite/tutorial-android.html",
+		"/Users/waiterZen/Desktop/boothy/public/js/allcomp.js",
+		"/Users/waiterZen/Desktop/boothy/public/js/all.js",
+		"/Users/waiterZen/Desktop/boothy/public/js/caman.full.js",
+		"/Users/waiterZen/Desktop/Todos_Angular/index.html",
+		"/Users/waiterZen/Desktop/Todos_Angular/js/nimbus.js",
+		"/Users/waiterZen/Desktop/NimbusBase/app/nimbusbase.js"
+	],
+	"find":
+	{
+		"height": 43.0
+	},
+	"find_in_files":
+	{
+		"height": 108.0,
+		"where_history":
+		[
+			"policy.txt",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"[]",
+			"html5",
+			"[]",
+			"alert",
+			"!",
+			"name",
+			"config",
+			"path",
+			"templateUrl",
+			"paths",
+			"config",
+			"html",
+			"define",
+			"config",
+			"ready",
+			"config",
+			"!",
+			"core",
+			"google_login",
+			"<!-- <a class=\"btn outline narrow\" ng-click=\"show_user",
+			"<li ng-repeat=\"_plugin in _plugins\">",
+			"enterprise._plugins",
+			"add_todo",
+			"alert",
+			"remove_share",
+			"alert",
+			" if not (@fromCloud?)",
+			"fromCloud",
+			"add_from_cloud",
+			"userid",
+			"init",
+			"add_from_cloud",
+			"alert",
+			"add_to_cloud",
+			"Date",
+			"create_time",
+			"alert",
+			"load",
+			"init",
+			"alert",
+			"updateAttributes",
+			"time",
+			"attributes",
+			"update",
+			"save",
+			"save :",
+			"save:",
+			"del_user",
+			"destroy",
+			"setToken",
+			"updateAttributes",
+			"save_user",
+			"remove_share",
+			"init",
+			"load",
+			"load:",
+			"updateAttributes",
+			"update_to_local",
+			"alert",
+			"add_to_cloud",
+			"include",
+			"updateAttributes",
+			"updateAttributes :",
+			"updateAttributes ：",
+			"updateAttributes:",
+			"create:",
+			"send_event_tracking",
+			"stringify",
+			"verify_guide",
+			"loadLocal",
+			"load",
+			"find",
+			"find:",
+			"update:",
+			"id",
+			"load",
+			"records",
+			"inished being added to Dy",
+			"load",
+			"rror while  add_to_cloud",
+			"load",
+			"user_model",
+			"DelayedOp",
+			"user",
+			"load",
+			"user_model",
+			"user",
+			"window.Items",
+			"sync_model_base_algo",
+			"form_mode",
+			"add_shortcut",
+			"UserListController",
+			"load_all_from_cloud",
+			"current_syncing",
+			"is_cloud_available",
+			"currently_syncing",
+			"current_syncing",
+			"ready()",
+			"current_syncing",
+			"is_cloud_available",
+			"load_all_from_cloud",
+			"while  load_all_from_cloud",
+			"while  load_all_from_clou",
+			"model",
+			"user",
+			"/?user/?",
+			"?user?",
+			"*user*",
+			"user*",
+			"user",
+			"users",
+			"user",
+			"module",
+			"_plugins",
+			"icon",
+			"ng",
+			"controller",
+			"_plugins",
+			"Users",
+			"Document",
+			"app_name",
+			"get_role",
+			"switch_to_project",
+			"getRole",
+			"app_name",
+			"get_role",
+			"switch_to_project",
+			"get_role"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"todos",
+			"todo",
+			"'",
+			"\naa ={\n    'AttributeDefinitions': [\n        {\n            'AttributeName': \"id\",\n            \"AttributeType\": \"S\"\n        },\n         {\n            \"AttributeName\": \"value\",\n            \"AttributeType\": \"S\"\n        } \n         \n    ],\n    \"KeySchema\": [\n        {\n            \"AttributeName\": \"id\",\n            \"KeyType\": \"HASH\"\n        }, {\n            \"AttributeName\": \"value\",\n            \"KeyType\": \"RANGE\"\n        },\n    ],\n    \n    \"ProvisionedThroughput\": {\n        \"ReadCapacityUnits\": 10,\n        \"WriteCapacityUnits\": 5\n    },\n    \"TableName\": \"tableA2\"\n}\n      \nNimbus.Client.DynamoDB.dynamodb.createTable(aa ,function a(err,data){alert(err); alert(JSON.stringify(data)) ;})\n",
+			"{\n"
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": true,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "/Users/waiterZen/Desktop/NimbusBase"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/waiterZen/Desktop/testpage"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/waiterZen/Desktop/enterprise"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "enterprise/app/app.coffee",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2562,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								371,
+								371
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "testpage/enterprise_dynamodb/plugins/values/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 154.0
+	},
+	"output.find_results":
+	{
+		"height": 154.0
+	},
+	"project": "",
+	"replace":
+	{
+		"height": 80.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"",
+				"@request2"
+			]
+		],
+		"width": 392.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 238.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
